@@ -9,25 +9,30 @@
     "start_process" : true,
     "server_path" : "./bin/selenium-server-standalone-3.9.1.jar",
     "log_path" : "",
+    "host": "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.gecko.driver" : ""
+        "webdriver.chrome.driver" : "./node_modules/chromedriver/bin/chromedriver"
     }
   },
-
   "test_settings" : {
     "default" : {
+      "globals": {
+        "waitForConditionTimeout": 3000
+      },
       "launch_url" : "http://localhost",
-      "selenium_port"  : 4444,
-      "selenium_host"  : "localhost",
       "silent": true,
       "screenshots" : {
         "enabled" : false,
         "path" : ""
       },
-      "desiredCapabilities": {
-        "browserName": "firefox",
-        "marionette": true
+      "desiredCapabilities" : {
+        "browserName" : "chrome",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "chromeOptions" : {
+          "args" : ["start-fullscreen"]
+        }
       }
     }
   }
