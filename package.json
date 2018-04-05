@@ -4,6 +4,9 @@
   "description": "end to end tests for Gimble",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+      "start": "nightwatch"
+  },
   "dependencies": {
     "nightwatch": "^0.9.20"
   }
