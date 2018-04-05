@@ -16,5 +16,4 @@ before_install:
 install:
   - yarn
 script:
-  - jdk_switcher use oraclejdk8
   - yarn test
