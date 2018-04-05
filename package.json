@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-      "start": "nightwatch"
+      "test": "nightwatch"
   },
   "dependencies": {
     "nightwatch": "^0.9.20"
