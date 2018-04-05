@@ -1,8 +1,6 @@
 sudo: required
 dist: trusty
 language: java
-addons:
-  firefox: "49.0.2"
 jdk:
   - oraclejdk8
 node_js:
