@@ -11,9 +11,7 @@
     "log_path" : "",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "",
-      "webdriver.gecko.driver" : "",
-      "webdriver.edge.driver" : ""
+      "webdriver.gecko.driver" : ""
     }
   },
 
@@ -30,18 +28,6 @@
       "desiredCapabilities": {
         "browserName": "firefox",
         "marionette": true
-      }
-    },
-
-    "chrome" : {
-      "desiredCapabilities": {
-        "browserName": "chrome"
-      }
-    },
-
-    "edge" : {
-      "desiredCapabilities": {
-        "browserName": "MicrosoftEdge"
       }
     }
   }
